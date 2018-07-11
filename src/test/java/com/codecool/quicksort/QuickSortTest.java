@@ -2,6 +2,7 @@ package com.codecool.quicksort;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -47,5 +48,15 @@ class QuickSortTest {
 
         List<Integer> expected = Arrays.asList(2);
         assertIterableEquals(expected, toSort);
+    }
+
+    @Test
+    void sortingZeroItemWorks() {
+        QuickSort quickSort = new QuickSort();
+
+        List<Integer> toSort = new ArrayList<>();
+        quickSort.sort(toSort);
+
+        assertEquals(0, toSort.size());
     }
 }
