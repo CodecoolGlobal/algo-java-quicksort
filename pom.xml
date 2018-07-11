@@ -11,9 +11,6 @@
    <name>Quicksort algorithm practice</name>
 
    <properties>
-      <version.java>1.8</version.java>
-      <version.maven.compiler.plugin>3.6.1</version.maven.compiler.plugin>
-	  <junit.jupiter.version>5.0.0-M4</junit.jupiter.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
    </properties>
@@ -22,21 +19,21 @@
       <dependency>
          <groupId>org.junit.jupiter</groupId>
          <artifactId>junit-jupiter-engine</artifactId>
-         <version>${junit.jupiter.version}</version>
+         <version>5.2.0</version>
          <scope>test</scope>
       </dependency>
    </dependencies>
-   
+
    <build>
       <plugins>
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>${version.maven.compiler.plugin}</version>
+            <version>3.6.1</version>
             <inherited>true</inherited>
             <configuration>
-               <source>${version.java}</source>
-               <target>${version.java}</target>
+               <source>1.8</source>
+               <target>1.8</target>
                <compilerArgument>-Xlint:all</compilerArgument>
                <showWarnings>true</showWarnings>
                <showDeprecation>true</showDeprecation>
